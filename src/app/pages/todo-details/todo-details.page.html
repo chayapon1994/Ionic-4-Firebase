@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="/home"></ion-back-button>
+        </ion-buttons>
+    <ion-title>Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <ion-item>
+      <ion-input required type="Nickname" placeholder="Nickname" [(ngModel)]="todo.nickname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input required type="Name" placeholder="Name" [(ngModel)]="todo.name"></ion-input>
+    </ion-item>
+    <ion-item>
+       <ion-input required type="Lastname" placeholder="Lastname" [(ngModel)]="todo.lastname"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-input required type="Phone" placeholder="Phone" [(ngModel)]="todo.phone"></ion-input>
+     </ion-item>
+    <ion-item>
+        <ion-input required type="Address" placeholder="Address" [(ngModel)]="todo.address"></ion-input>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="full" (click)="saveTodo()">Save</ion-button>
+</ion-content>
